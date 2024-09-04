@@ -1,0 +1,130 @@
+/*
+
+  Josh's Custom CSS Reset
+
+  https://www.joshwcomeau.com/css/custom-css-reset/
+
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+body {
+  background-image: url("/src/images/pexels-lkloeppel-577697.jpg");
+  /* background-position: center; */
+  background-size: cover;
+  flex-direction: column;
+  display: flex;
+  height: 100dvh;
+}
+header {
+  background-color: #628395cc;
+  height: 15%;
+  padding-top: 3%;
+}
+h1,
+h2 {
+  place-self: center;
+}
+h2 {
+  margin-top: 3%;
+}
+h1 {
+  place-self: center;
+  color: white;
+  font-weight: 700;
+  font-size: 5rem;
+}
+button {
+  background: inherit;
+  border: none;
+  font-size: 1.5rem;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+#content {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+}
+#cContainer {
+  display: flex;
+  height: 80dvh;
+  place-items: center;
+}
+#cContainer > img {
+  width: 80%;
+  height: min-content;
+}
+#cContainer > div {
+  width: 20%;
+  flex-direction: column;
+  display: flex;
+  padding: 3%;
+}
+#container {
+  display: grid;
+  grid-gap: 3%;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+.imgContainer {
+  display: flex;
+  padding: 3%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: aliceblue;
+}
+.imgContainer > img {
+  height: 80%;
+}
+#container > div,
+div > img {
+  border-radius: 10px;
+}
